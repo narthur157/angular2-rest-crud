@@ -1,0 +1,16 @@
+.main-container {
+	width: 15%;
+	padding: 10px;
+	display: inline-block;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.dib {
+	display: inline-block;
+}
+
+.detailContainer {
+	width: 40%;
+	display: inline-block;
+}

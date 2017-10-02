@@ -1,0 +1,30 @@
+.field-label {
+	width: 20%;
+	display: inline-block;
+}
+
+.field-value {
+	width: 70%;
+	display: inline-block;
+}
+
+.field {
+	padding: 8px;
+}
+
+.save {
+	width: 100%;
+	padding: 4px;
+}
+
+.main-container {
+	width: 40%;
+	padding: 10px;
+	display: inline-block;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.dib {
+	display: inline-block;
+}

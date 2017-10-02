@@ -1,0 +1,8 @@
+<h2>My users</h2>
+
+<div class="users">
+  <button type='button' style='width: 100%;' *ngFor="let user of users" (click)="onSelect(user)" [class.selected]="user === selectedUser">{{user.id}}</button>
+</div>
+<div>
+	<button style='margin-top: 20px;' (click)="addUser()">Add New user</button>
+<div>

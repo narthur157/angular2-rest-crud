@@ -1,0 +1,42 @@
+<div class='dib'>
+	<div class='main-container'>
+		<div class='field'>
+			<label class='field-label'>Email </label>
+			<input class='field-value' [(ngModel)]='user.email' />
+		</div>
+
+		<div class='field'>
+			<label class='field-label'>Name </label>
+			<input class='field-value' [(ngModel)]='user.name' />
+		</div>
+
+		<div class='field'>
+			<label class='field-label'>Tenant </label>
+			<input class='field-value' [(ngModel)]='user.tenant' />
+		</div>
+
+		<div class='field'>
+			<label class='field-label'>Roles </label>
+			<div class='field-value' >
+				<input style='width: 100%;' *ngFor='let _ of user.roles; index as i' [(ngModel)]='user.roles[i]'>
+				<input style='width: 100%;' [(ngModel)]='role' placeholder='New role'/>
+			</div>
+		</div>
+
+		<button class='save' (click)='save()'>Save</button>
+	</div>
+	<div class='main-container'>
+		<div class='field' *ngIf='user.roles && user.roles.includes("developer")'>
+			<label class='field-label'>Data Access Rights</label>	
+			<div class='field-value'>
+				<label>Section 1 </label><input type='checkbox' [(ngModel)]='section1' (ngModelChange)='setDataAccess()' />
+				<label>Section 2 </label><input type='checkbox' [(ngModel)]='section2' (ngModelChange)='setDataAccess()' />
+			</div>
+		</div>
+
+		<div class='field' *ngIf='user.roles && user.roles.includes("user")'>
+			<label class='field-label'>Password Validity</label>
+			<input class='field-value' [(ngModel)]='user.passwordValid' />
+		</div>
+	</div>
+</div>

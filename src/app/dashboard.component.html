@@ -1,0 +1,8 @@
+<div>
+	<div class='main-container'>
+		<user-list (onSelected)='onSelected($event)'></user-list>
+	</div>
+	<div class='dib' style='width: 70%;'>
+		<user-detail *ngIf='selectedUser' [user]='selectedUser'></user-detail>
+	</div>
+</div>

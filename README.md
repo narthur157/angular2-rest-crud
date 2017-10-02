@@ -1,12 +1,3 @@
-# Components
-
-`UserList` selectUser 
-`UserDetail` saveUser
-`UserListContainer`
-`UserDetailContainer`
-`UserForm`
-`DeveloperForm`
-
 # Angular CLI Auto generated docs:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
